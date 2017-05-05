@@ -1,0 +1,13 @@
+<h1 class= "title" >
+	<%= @post.title %>
+</h1>
+
+<p>
+	Summitted <%= time_ago_in_words(@post.created_at) %> Ago
+</p>
+
+<p class= "body" >
+	Body<br/>
+	<%= @post.body %>
+</p>
+
