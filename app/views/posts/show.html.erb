@@ -1,16 +1,27 @@
-<h1 class= "title" >
+<div id="post_content">
+	<h1 class= "title" >
 	<%= @post.title %>
-</h1>
+	</h1>
 
-<p>
-	Summitted <%= time_ago_in_words(@post.created_at) %> Ago
-</p>
+	<p>
+		Summitted <%= time_ago_in_words(@post.created_at) %> Ago
+			| <%= link_to "Edit", edit_post_path(@post) %>	 
+			| <%= link_to "Back", posts_path %>
+	</p>
 
-<p class= "body" >
-	Body<br/>
-	<%= @post.body %>
-</p>
+	<p class= "body" >
+		Body<br/>
+		<%= @post.body %>
+	</p>
 
-<%= link_to "Edit", edit_post_path(@post) %>
-<%= link_to "Back", posts_path %>
+	<%= link_to "Edit", edit_post_path(@post) %>
+	<%= link_to "Back", posts_path %>
+
+	<div id="cpmments">
+		<h2><%= @post.comments.count %>Comments</h2>
+			<%= render @post.comments %>
+		<h3>Add a comment:</h3>
+		<%= render "comments/form" %>
+	</div>
+</div>
 

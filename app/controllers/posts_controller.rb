@@ -24,7 +24,7 @@ class PostsController < ApplicationController
 		if @post.update(post_params)
 			redirect_to :action => :show, :id => @post
 		else
-			redirect_to :action => :edit
+			render 'edit'
 		end
 	end
 
