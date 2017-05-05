@@ -18,15 +18,15 @@
 
 		<ul>
 			<li class="category">Website</li>
-			<li><%= link_to "Blog", root_path%></li>
-			<li>About</li>
+			<li><%= link_to "Blog", root_path %></li>
+			<li><%= link_to "About", about_path %></li>
 		</ul>
 
 		<ul>
 			<li><a href="https://www.plurk.com/chses9440611">Plurk</li>
 			<li><a href="https://twitter.com/chses910372">Twitter</li>
 			<li><a href="https://github.com/chses9440611">Github</li>
-				<li><a href="maitto:chses910372@gmail.com">Email</a></li>
+			<li><a href="maitto:chses910372@gmail.com">Email</a></li>
 		</ul>
 		<p>Admin Login</p>
 
@@ -34,7 +34,13 @@
 
 	<div id="main">
 		<div id="header">
-			<p>All Posts</p>
+			<% if current_page?(root_path) %>
+				<p>All Posts</p>
+			<% elsif current_page?(about_path) %>
+				<p>About</p>
+			<% else %>
+				<%= link_to "Back to All Posts", root_path %>
+			<% end %>
 			<div class="button">
 				<button class="button"><%= link_to "New Post", new_post_path %></button>
 				<button class="button">Log Out</button>
