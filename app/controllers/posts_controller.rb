@@ -5,26 +5,35 @@ class PostsController < ApplicationController
 	end
 	
 	def new
+		@post = Post.new()
 	end
 
 	def create
 		@post = Post.new(post_params)
-		@post.save
-
-		redirect_to @post
+		if @post.save
+			redirect_to 
+		else
+			render :action => :new
+		end
 	end
 
-	def show
-		
+	def show	
 	end
 
 	def update
+		if @post.update(post_params)
+			redirect_to :action => :show, :id => @post
+		else
+			redirect_to :action => :edit
+		end
 	end
 
 	def edit
 	end
 
 	def destroy
+		@post.destroy
+		redirect_to :action => :index
 	end
 
 
