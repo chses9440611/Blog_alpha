@@ -3,8 +3,11 @@
 <% @posts.each do |post| %>
 	<div class= "post_wall">
 		<h2 class="title"><%= link_to post.title, post %></h2>
-		<p class = "date"><%= post.created_at.strftime("%B/%d/%Y") %>
-		<%= button_to "Delete", post_path(post), :method => :delete, :data =>{ :confirm => "Are you sure? "} %>
+		<p class = "date">
+			<% if user_signed_in? %>
+				<%= button_to "Delete", post_path(post), :method => :delete, :data =>{ :confirm => "Are you sure? "} %>|
+			<% end %>
+			<%= post.created_at.strftime("%B/%d/%Y") %>
 		</p>
 	</div>
 <% end %>

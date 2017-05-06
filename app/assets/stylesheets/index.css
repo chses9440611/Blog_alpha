@@ -1,0 +1,99 @@
+	
+	body{
+		padding: 10px 10px 10px 10px;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-family: sans-serif;
+		line-height: 1.5em;
+		background-color: white;
+		color: white;
+	}
+	.main:before{
+		content: "";
+		position: absolute;
+		background-image: url(background.png);
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		background-attachment: fixed;
+		z-index: -4;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0.68;
+		height:100%;
+		width:100%;
+	}
+	.main{
+		position: relative;
+		z-index: 5;
+		color: #ffffff;
+	}
+	h1, h2{
+		color: #ffa500;
+		font-family: Comic Sans, Cursive;
+		border-bottom: thin dotted #ff00ff;
+		padding-bottom: 8px;
+	}
+			
+	h1{
+		border-bottom: 1px solid black;
+	}
+	p{
+		color: white;
+		/*background-color: red;*/
+		border: 1px dotted gray;
+	}
+	.diary{
+		color:green;
+	}
+	
+	.spring{
+		background-color: green;	
+		color: #ff00ff;
+		border: 2px dotted blue;
+	}
+	.winter{
+		background-color: darkgray;
+		color: gold;
+		border: 1px dotted silver;
+	}
+	p.normal{
+		color: white;
+		border: 1px solid gold;
+		width: 50%;
+	}
+	
+	th, td{
+		font-family: Verdana, Comic Sans;
+		width: 300px;
+		text-align: center;
+	}
+	
+	th{
+		
+		border: 2px white solid;
+	}
+	td{
+		text-align="left";
+	}
+	
+	.subject{
+		font-style: italic;
+	}
+	
+	.progress{
+		color: red;
+		font-weight: bold;
+	}
+	
+	a:link{
+		color: blue;
+	}
+	
+	a: visited{
+		color: #0000ff;
+	}
+	a: hover{
+		color: red;
+	}

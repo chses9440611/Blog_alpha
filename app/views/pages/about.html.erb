@@ -1,3 +1,170 @@
-<div>
-	<h1>On Making</h1>
+<div class="main">
+	<h1 id="title">
+		<%= image_tag( src="head_photo.jpg", style:'height:5%;width:5%') %>
+		Jason's Home!
+	</h1>
+	<p id = "brief">Welcome to Jason's Home. I will build my learning note and some daily diary here.</p>
+	<h2 id ="instruction">About me</h2>
+	<p>
+	<ul>
+		<li>Hello, I'm <b>Jason Huang</b></li>
+		<li>Sophomore graduate in National Chiao-Tung University</li> 
+		<li>Major in Electric Engineering and Computer Science</li>
+		<li>Here is the site where I practice html and CSS</li>
+		<li>Love Japanese animation and manga</li>
+		<li>Interested in learning new language and new tech</li>
+		<li>Purposes is to make things can change the world totally!</li>
+	</ul>
+	</p>
+	<h2 id ="course timetable">School Timetable</h2>
+	<table>
+		<!--using thead to isolate the first row-->
+		<thead>
+			<tr>
+				<th></th>
+				<!--week-->
+				<th scope="col">Sun.</th>
+				<th scope="col">Mon.</th>
+				<th scope="col">Tue.</th>
+				<th scope="col">Wed.</th>
+				<th scope="col">Thurs.</th>
+				<th scope="col">Fri.</th>
+				<th scope="col">Sat.</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<!--daily-->
+			<th scope="row">08:00~09:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<th scope="row">09:00~10:00</th>
+			<td>AI instruction</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>Probability</td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<th scope="row">10:00~11:00</th>
+			<td></td>
+			<td></td>
+			<td>Japanese</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>	
+
+		<tr>
+			<th scope="row">11:00~12:00</th>
+			<td></td>
+			<td></td>
+			<td>Japanese</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<th scope="row">12:00~13:00</th>
+			<td colspan="5"></td>
+		</tr>
+
+		<tr>
+			<th scope="row">13:20~14:20</th>
+			<td rowspan = "2">Art of Games</td>
+			<td>Probability</td>
+			<td rowspan = "2">Physical Edu.</td>
+			<td rowspan = "2">AI Instruction</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>	
+			<th scope="row">14:20~15:20</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>	
+
+		<tr>
+			<th scope="row">15:20~16:20</th>
+			<td></td>
+			<td rowspan = "2">Computer Organ.</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>	
+
+		<tr>
+			<th scope="row">16:20~17:20</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>Computer Organ.</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		</tbody>	
+	</table>
+	<h2 class="diary">Dairy and murmur</h2>
+	<p class="winter">12/18,I toke part in Xamarin Day, Taipei.</p>
+	<%= image_tag "chomado.jpg", alt:"the photo with Chomado", style: 'height:25%;width:25%'%>
+	<p class="normal">
+	12/17, is the Xamarin Day in Daipei. So, I take part in the little party and get some information about Windows's Xamarin tools and XAML.
+	</p>
+	<h2 id = "learning_note">Learning note</h2>
+	<q>Believe or not, Dr.forget is faster than Dr.memorize</q>
+	<h3>My learning list</h3>
+	<p>Below is what I want to learn or interesting.</p>
+	<!--list is a blovk element-->
+	<ul id = "learning lis">
+		<li id ="web0"> <span class="subject">html and css</span>, <span class="progress">Learning now</span></li>
+		<li id ="web1"><span class="subject">Ruby/Ruby on Rails</span>, <span class="progress">Learning</span></li>
+		<li id ="web2"><span class ="subject">JavaScript</span>, <span class="progress">Learning</span></li>
+		<li id = "web3"><span class ="subject">Java&amp;Android APP</span>, <span class="progress">Not yet</span></li>
+		<li id ="lan1"><span class ="subject">C#</span>, <span class="progress">2017</span></li>
+		<li id ="lan2"><span class ="subject">C++</span>, <span class="progress">2017</span></li>
+		<li id ="lan3"><span class ="subject">C</span>, <span class="progress">Learning</span></li>
+		<li id ="game0"><span class ="subject">Unity</span>, <span class="progress">2017/3~2017/5</span></li>
+		<li id ="tool0"><span class ="subject">Krita</span>, <span class="progress">2017/2~2017/7</span></li>
+	</ul>
+	<h3>Hello world</h3>
+	<h2 id = "develop note" class="diary">Develope diary</h2>
+	<p class="normal">
+	12/22, I use CSS to add Img of Your name as background image, take opacity to transparent the image. Finally, it looks better now.
+	</p>
+	<address>
+		<h2 id ="email">Contact me</h2>
+		<a href= mailto:chses910372@gmail.com >My email</a>
+		</br>
+		<a href= "/~u0310020/index.html#title" title="top of website">Go back top</a>
+		</br>
+		<a href= "http://www.google.com" target = "_blank">Google</a>
+		</br>
+		<a href= "/~u0310020/Form/form_practice.html">Form_practice</a>
+	</address>
+</div>
+<div><!--CopyRight here--></div>
 </div>
