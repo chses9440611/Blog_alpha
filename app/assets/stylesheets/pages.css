@@ -1,0 +1,107 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.pages{
+	right: 0;
+	opacity: 0.68;
+	height:100%;
+	position: relative;
+	z-index: 5;
+	color: #ffffff;
+}
+
+.pages:before{
+	content: "";
+	position: absolute;
+	background-image: url(background.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;
+	z-index: -4;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.68;
+	height:100%;
+	width:100%;
+	float:right;
+}
+	
+.pages{	
+	width: 70%;
+	position: relative;
+	z-index: 5;
+	color: #ffffff;
+	padding-top:10px;
+	padding-right: 60px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+	border: 5px solid #aa66dd;
+	border-radius: 10px;	
+}
+
+h1, h2{
+	color: #ffa500;
+	font-family: Comic Sans, Cursive;
+	padding-bottom: 8px;
+}
+
+h1{
+	border-bottom: 1px solid black;
+}
+p{
+	color: white;
+	/*background-color: red;*/
+}
+.diary{
+	color:green;
+}
+
+.spring{
+	background-color: green;	
+	color: #ff00ff;
+	border: 2px dotted blue;
+}
+.winter{
+	color: gold;
+}
+p.normal{
+	color: white;
+	width: 50%;
+}
+
+th, td{
+	font-family: Verdana, Comic Sans;
+	width: 300px;
+	text-align: center;
+}
+
+th{
+
+	border: 2px white solid;
+}
+
+td{
+	text-align="left";
+}
+
+.subject{
+	font-style: italic;
+}
+
+.progress{
+	color: red;
+	font-weight: bold;
+}
+
+a:link{
+	color: blue;
+}
+
+a:visited{
+	color: #0000ff;
+}
+a:hover{
+	color: red;
+}

@@ -35,23 +35,29 @@
 
 	<div id="main">
 		<div id="header">
-			<% if current_page?(root_path) %>
-				<p>All Posts</p>
-			<% elsif current_page?(about_path) %>
-				<p>About</p>
-			<% else %>
-				<%= link_to "Back to All Posts", root_path %>
-			<% end %>
-			<% if user_signed_in? %>
-				<div class="button">
-					<button class="button"><%= link_to "New Post", new_post_path %></button>
-					<button class="button"><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></button>
-				</div>
-			<% end %>
+			<span>
+				<% if current_page?(root_path) %>
+					All Posts
+				<% elsif current_page?(about_path) %>
+					About
+				<% else %>
+					<%= link_to "Back to All Posts", root_path %>
+				<% end %>
+			</span>
+				<% if user_signed_in? %>
+					<div class="button_con">
+						|<button id="new" class="button"><%= link_to "New Post", new_post_path %></button>
+						|<button id="logout" class="button"><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></button>
+					</div>
+				<% end %>
 		</div>
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
 	</div>
-    <%= yield %>
+
+	<div id="content">
+		<%= yield %>
+	</div>
+
   </body>
 </html>

@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+div#sidebar{
+	width: 10%;
+	height: 100%;
+	float: left;
+	margin: 5px;
+	margin-top: 0px;
+	margin-left: -7px;
+	padding: 5px;
+	padding-top: 50px;
+	background-color: #aaffee;
+	position:fixed;
+	top: -15px;
+	z-index: 6;
+}
+
+div#header{
+	background-color: #aaffee;
+	width:100%;
+	margin-top: -15px;
+	margin-left: 150px;
+	position: fixed;
+	z-index: 6;
+}
+
+div#header p{
+	color: black;
+	font-size: 40px;
+	left: 200px;
+}
+
+div#content{
+	width: 80%;
+	float:left;
+	position:relative;
+	left:170px;
+	top: 35px
+
+}
+
+.header span{
+	float: left;
+}
+.button_con{
+	display: inline;
+}
+button#new, #logout{
+	margin: 5px;
+}
