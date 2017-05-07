@@ -51,7 +51,6 @@ h1{
 	border-bottom: 1px solid black;
 }
 p{
-	color: white;
 	/*background-color: red;*/
 }
 .diary{
@@ -66,8 +65,7 @@ p{
 .winter{
 	color: gold;
 }
-p.normal{
-	color: white;
+.normal{
 	width: 50%;
 }
 

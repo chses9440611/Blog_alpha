@@ -49,7 +49,10 @@ div#content{
 	position:relative;
 	left:170px;
 	top: 35px
+}
 
+#content{
+	font-color: black;
 }
 
 .header span{
