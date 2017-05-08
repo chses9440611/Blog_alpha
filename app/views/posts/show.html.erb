@@ -1,8 +1,9 @@
 <div id="post_content">
+	<% @user = current_user%>
 	<h1 class= "title" >
-	<%= @post.title %>
+		<%= @post.title %>
 	</h1>
-	<% if user_signed_in? %>
+	<% if user_signed_in? && @user.character == "root"%>
 		<p>
 			Summitted <%= time_ago_in_words(@post.created_at) %> Ago
 				| <%= link_to "Edit", edit_post_path(@post) %>	 
